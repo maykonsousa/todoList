@@ -1,0 +1,125 @@
+.Container {
+  
+  margin: -1.75rem auto;
+  width: 100%;
+  max-width: 64rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+form input {
+  display: block;
+  border: solid 1px var(--gray-700);
+  border-radius: 4px;
+  flex: 1;
+  padding: 0.5rem;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  color: var(--gray-100);
+  background: var(--gray-400);
+  transition: all 0.2s ease-in-out;
+}
+
+form button {
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  font-weight: bold;
+  line-height: 24px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 4px;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+form button:hover {
+  background: var(--blue);
+}
+
+/*disabled*/
+form button[disabled] {
+ 
+  cursor: not-allowed;
+  
+}
+form button[disabled]:hover {
+ background-color: var(--gray-300);
+  
+  
+}
+
+.ToDoList {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.ToDoHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  line-height: 1rem; 
+}
+
+.TotalTasks{
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.TotalTasks span{
+  display:block;
+  margin-left: 1rem;
+  padding: 0.5rem;
+  
+  text-align: center;
+  line-height: 1.5rem;
+  border-radius: 6px;
+  background: var(--gray-300);
+  color: var(--gray-100);
+
+}
+
+.DoneTasks{
+  color: var(--purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.DoneTasks span{
+  display:block;
+  margin-left: 1rem;
+  padding: 0.5rem;
+  
+  text-align: center;
+  line-height: 1.5rem;
+  border-radius: 6px;
+  background: var(--gray-300);
+  color: var(--gray-100);
+
+}
+  
+
+
+
+
