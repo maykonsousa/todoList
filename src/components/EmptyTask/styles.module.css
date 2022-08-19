@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin: 1.5rem auto;
   border-top: solid 1px var(--gray-300);  
   padding: 4rem 1rem;
@@ -12,3 +13,10 @@
 
   margin-bottom: 1rem;
 }
+
+@media (max-width: 768px) {
+ .Container {
+   font-size: 87.5%;
+ }
+   
+ }
